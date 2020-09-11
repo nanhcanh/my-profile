@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
-import './LandingPage.css';
+import './LandingPage.scss';
 import background from '../../Image/background.jpg';
 import avatar from '../../Image/avatar.jpg';
 import ScrollToTop from "react-scroll-to-top";
+import Carousel from 'react-elastic-carousel';
 class LandingPage extends Component {
+    state = {
+        items: [
+            {id: 1, title: 'item #1'},
+            {id: 2, title: 'item #2'},
+            {id: 3, title: 'item #3'},
+            {id: 4, title: 'item #4'},
+            {id: 5, title: 'item #5'}
+        ]
+    }
     // constructor(props){
       // super(props);
       // this.state = {};
@@ -19,6 +29,7 @@ class LandingPage extends Component {
     // componentDidUpdate(){}
 
     render() {
+        const { items } = this.state;
         return (
             <div className="container">
                 <img className="background-img" src={background} alt='Background'/>
@@ -39,6 +50,9 @@ class LandingPage extends Component {
                         <div className="title-h4">
                             ABOUT ME
                         </div>
+                        <Carousel >
+                            {items.map(item => <div key={item.id}>{item.title}</div>)}
+                        </Carousel>
                     </div>
                 </div>
             </div>
