@@ -1,0 +1,95 @@
+/*
+ * LandingPage css File
+*/
+
+.LandingPage {
+    /* propertys here */
+}
+.background-img{
+    max-width: 100%;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+    position: relative;
+}
+.box-list-title{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:66px;
+    
+}
+
+.list-item{
+    position: fixed;
+    max-height: 66px;
+    padding: 20px;
+    left:40px;
+    text-align:center;
+    color:white;
+    font-size:20px;
+}
+.list-item:hover{
+    color:#94A3BA;
+    font-size:25px;
+    cursor: pointer;
+}
+.name{
+    margin-top:20%;
+    text-align: center;
+    font-weight: bold;
+    margin-left:10%;
+    color:white;
+    font:normal normal normal 88px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+}
+.role{
+    background: 0 0;
+    text-align: center;
+    font-weight: bold;
+    margin-left:10%;
+    color:#94A3BA;
+    font:normal normal normal 25px/1.4em avenir-lt-w01_35-light1475496,sans-serif
+}
+.circular{
+    margin-top:18%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 42%;
+    position: absolute;
+    overflow: hidden;
+    border: 10px solid white;
+}
+.avatar {
+    max-width: 200;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.data-aboutme{
+    color:transparent;
+    height:480px;
+    position: relative;
+    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+    left: 0px;
+    grid-area: 4 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start;
+}
+.title-h4{
+    color: black;
+    min-width: 100%;
+    margin-top: 50%;
+    font:normal normal normal 38px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+}
